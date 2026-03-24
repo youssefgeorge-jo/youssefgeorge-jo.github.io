@@ -15,36 +15,31 @@ body {
     color: #1e293b;
 }
 
-/* CONTAINER */
 .container {
-    max-width: 900px;
-    margin: 60px auto;
+    max-width: 950px;
+    margin: 50px auto;
     background: white;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
-/* HEADER */
 .header {
     text-align: center;
 }
 
 .header img {
     width: 120px;
-    height: 120px;
     border-radius: 50%;
-    object-fit: cover;
     margin-bottom: 15px;
 }
 
 .header h1 {
-    font-size: 34px;
-    margin-bottom: 5px;
+    font-size: 36px;
 }
 
 .line {
-    width: 60px;
+    width: 70px;
     height: 3px;
     background: #2563eb;
     margin: 15px auto;
@@ -52,6 +47,7 @@ body {
 
 .title {
     color: #475569;
+    font-size: 18px;
 }
 
 .contact a {
@@ -60,7 +56,6 @@ body {
     margin: 0 10px;
 }
 
-/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -69,32 +64,25 @@ body {
     color: white;
     border-radius: 25px;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #1e40af;
-}
-
-/* SECTIONS */
 .section {
     margin-top: 40px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: 0.6s;
-}
-
-.section.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .section h2 {
     border-bottom: 2px solid #eee;
     padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
-/* SKILLS */
+.card {
+    background: #f8fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
 .skills span {
     display: inline-block;
     background: #eef2ff;
@@ -103,15 +91,6 @@ body {
     border-radius: 20px;
 }
 
-/* CARD */
-.card {
-    background: #f8fafc;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 10px;
-}
-
-/* FOOTER */
 .footer {
     text-align: center;
     margin-top: 40px;
@@ -124,73 +103,123 @@ body {
 
 <div class="container">
 
-    <div class="header">
-        <img src="https://i.imgur.com/yourimage.png">
-        <h1>Youssef George</h1>
-        <div class="line"></div>
-        <p class="title">IT Help Desk Specialist | IT Support Technician</p>
+<div class="header">
+    <img src="https://drive.google.com/file/d/1k42UzIU3wOSqgmrg6vtr7LHPsXCl0m_o/view?usp=sharing" style="
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #2563eb;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+"> 
+    <h1>Youssef George</h1>
+    <div class="line"></div>
+    <p class="title">IT Help Desk Specialist | IT Support Technician</p>
 
-        <div class="contact">
-            <a href="mailto:youssefgeorgesadiek@gmail.com">Email</a>
-            <a href="https://wa.me/201222954032">WhatsApp</a>
-            <a href="https://linkedin.com/in/youssef-george1">LinkedIn</a>
-            <a href="#">GitHub</a>
-        </div>
-
-        <a class="btn" href="#">cv.pdf</a>
+    <div class="contact">
+        <a href="mailto:youssefgeorgesadiek@gmail.com">Email</a>
+        <a href="https://wa.me/201222954032">WhatsApp</a>
+        <a href="https://linkedin.com/in/youssef-george1">LinkedIn</a>
+        <a href="https://github.com/youssefgeorge-jo">GitHub</a>
     </div>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>IT Support Specialist with strong troubleshooting skills in hardware, software, and networking.</p>
-    </div>
+    <a class="btn" href="#">cv.pdf</a>
+</div>
 
-    <div class="section">
-        <h2>Experience</h2>
-        <div class="card">IT Support & Business Owner (2023–2026)</div>
-        <div class="card">School Leadership (2023–2026)</div>
-    </div>
+<div class="section">
+<h2>Professional Summary</h2>
+<p>
+Highly motivated IT Support Specialist with a strong foundation in troubleshooting, system maintenance, and customer service. 
+Experienced in diagnosing hardware and software issues, configuring systems, and providing efficient technical solutions. 
+Passionate about technology, continuous learning, and delivering high-quality support in fast-paced environments.
+</p>
+</div>
 
-    <div class="section">
-        <h2>Education</h2>
-        <div class="card">Bachelor’s Degree - Expected 2026</div>
-    </div>
+<div class="section">
+<h2>Technical Skills</h2>
+<div class="skills">
+<span>IT Help Desk</span>
+<span>Technical Support</span>
+<span>Networking Fundamentals</span>
+<span>Hardware Troubleshooting</span>
+<span>Software Installation</span>
+<span>Python Basics</span>
+<span>Microsoft Office</span>
+<span>Operating Systems</span>
+</div>
+</div>
 
-    <div class="section">
-        <h2>Certificates</h2>
-        <div class="card">Cybersecurity</div>
-        <div class="card">IT Help Desk</div>
-        <div class="card">CCNA 200-301</div>
-    </div>
+<div class="section">
+<h2>Professional Experience</h2>
 
-    <div class="section">
-        <h2>Skills</h2>
-        <div class="skills">
-            <span>IT Support</span>
-            <span>Networking</span>
-            <span>Python</span>
-            <span>Hardware</span>
-        </div>
-    </div>
+<div class="card">
+<h3>IT Support Specialist & Business Owner</h3>
+<p><strong>2023 – Present</strong></p>
+<p>
+Delivered comprehensive technical support services including hardware diagnostics, software troubleshooting, and system installations. 
+Managed client relationships, ensured customer satisfaction, and provided reliable IT solutions tailored to client needs.
+</p>
+<ul>
+<li>Diagnosed and resolved hardware and software issues efficiently</li>
+<li>Installed and configured operating systems and applications</li>
+<li>Provided remote and on-site support</li>
+<li>Maintained high customer satisfaction levels</li>
+</ul>
+</div>
 
-    <div class="footer">
-        © 2026 Youssef George
-    </div>
+<div class="card">
+<h3>School Leadership & Quality Team Member</h3>
+<p><strong>2023 – Present</strong></p>
+<p>
+Actively participated in school leadership initiatives and quality improvement programs, demonstrating strong teamwork and communication skills.
+</p>
+<ul>
+<li>Organized student activities and events</li>
+<li>Facilitated communication between students and administration</li>
+<li>Developed leadership and problem-solving skills</li>
+</ul>
+</div>
 
 </div>
 
-<script>
-const sections = document.querySelectorAll('.section');
+<div class="section">
+<h2>Education</h2>
+<div class="card">
+<p><strong>Bachelor’s Degree in Higher Education</strong></p>
+<p>Expected Graduation: 2026</p>
+</div>
+</div>
 
-window.addEventListener('scroll', () => {
-    sections.forEach(sec => {
-        const top = sec.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-            sec.classList.add('show');
-        }
-    });
-});
-</script>
+<div class="section">
+<h2>Certifications & Courses</h2>
+<div class="card">
+<ul>
+<li>Introduction to Cybersecurity</li>
+<li>IT Help Desk Training</li>
+<li>Computer Hardware & Software Basics</li>
+<li>CCNA 200-301 (Networking Fundamentals)</li>
+</ul>
+</div>
+</div>
+
+<div class="section">
+<h2>Projects</h2>
+<div class="card">
+<p><strong>IT Maintenance Service</strong></p>
+<p>Provided troubleshooting, repair, and system setup services for multiple clients.</p>
+</div>
+
+<div class="card">
+<p><strong>Networking Practice Lab</strong></p>
+<p>Configured routers and switches and practiced network troubleshooting scenarios.</p>
+</div>
+</div>
+
+<div class="footer">
+© 2026 Youssef George
+</div>
+
+</div>
 
 </body>
 </html>
