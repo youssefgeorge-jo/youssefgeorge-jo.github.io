@@ -5,19 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Youssef George</title>
 
-<!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f8fafc;
+    background: #f5f7fa;
+    margin: 0;
     color: #1e293b;
 }
 
@@ -25,77 +19,96 @@ body {
 .container {
     max-width: 900px;
     margin: 60px auto;
-    background: #ffffff;
+    background: white;
     padding: 50px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
 
 /* HEADER */
 .header {
     text-align: center;
-    margin-bottom: 40px;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
 }
 
 .header h1 {
-    font-size: 36px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-size: 34px;
+    margin-bottom: 5px;
 }
 
-.header p {
-    color: #64748b;
-    margin-top: 8px;
+.line {
+    width: 60px;
+    height: 3px;
+    background: #2563eb;
+    margin: 15px auto;
 }
 
-.contact {
-    margin-top: 15px;
+.title {
+    color: #475569;
 }
 
 .contact a {
     text-decoration: none;
     color: #2563eb;
     margin: 0 10px;
-    font-weight: 500;
 }
 
-/* SECTION */
+/* BUTTON */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2563eb;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1e40af;
+}
+
+/* SECTIONS */
 .section {
-    margin-bottom: 35px;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #e2e8f0;
+    border-bottom: 2px solid #eee;
     padding-bottom: 5px;
-}
-
-/* LIST */
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-    color: #475569;
 }
 
 /* SKILLS */
 .skills span {
     display: inline-block;
     background: #eef2ff;
-    color: #1e40af;
-    padding: 8px 14px;
+    padding: 8px 12px;
     margin: 5px;
-    border-radius: 25px;
-    font-size: 14px;
-    transition: 0.3s;
+    border-radius: 20px;
 }
 
-.skills span:hover {
-    background: #2563eb;
-    color: white;
+/* CARD */
+.card {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 /* FOOTER */
@@ -103,7 +116,6 @@ li {
     text-align: center;
     margin-top: 40px;
     color: #94a3b8;
-    font-size: 14px;
 }
 </style>
 </head>
@@ -113,37 +125,42 @@ li {
 <div class="container">
 
     <div class="header">
+        <img src="https://i.imgur.com/yourimage.png">
         <h1>Youssef George</h1>
-        <p>IT Help Desk Specialist | IT Support Technician</p>
+        <div class="line"></div>
+        <p class="title">IT Help Desk Specialist | IT Support Technician</p>
 
         <div class="contact">
             <a href="mailto:youssefgeorgesadiek@gmail.com">Email</a>
             <a href="https://wa.me/201222954032">WhatsApp</a>
+            <a href="https://linkedin.com/in/youssef-george1">LinkedIn</a>
+            <a href="#">GitHub</a>
         </div>
+
+        <a class="btn" href="#">cv.pdf</a>
     </div>
 
     <div class="section">
         <h2>About Me</h2>
-        <p>
-            IT Support Specialist with strong troubleshooting skills in hardware, software, and networking.
-        </p>
+        <p>IT Support Specialist with strong troubleshooting skills in hardware, software, and networking.</p>
     </div>
 
     <div class="section">
         <h2>Experience</h2>
-        <ul>
-            <li>Provided IT support and solved technical issues</li>
-            <li>Installed and configured systems</li>
-            <li>Improved customer satisfaction</li>
-        </ul>
+        <div class="card">IT Support & Business Owner (2023–2026)</div>
+        <div class="card">School Leadership (2023–2026)</div>
     </div>
 
     <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li>Computer Maintenance Service</li>
-            <li>Networking Practice (CCNA)</li>
-        </ul>
+        <h2>Education</h2>
+        <div class="card">Bachelor’s Degree - Expected 2026</div>
+    </div>
+
+    <div class="section">
+        <h2>Certificates</h2>
+        <div class="card">Cybersecurity</div>
+        <div class="card">IT Help Desk</div>
+        <div class="card">CCNA 200-301</div>
     </div>
 
     <div class="section">
@@ -153,7 +170,6 @@ li {
             <span>Networking</span>
             <span>Python</span>
             <span>Hardware</span>
-            <span>Communication</span>
         </div>
     </div>
 
@@ -162,6 +178,19 @@ li {
     </div>
 
 </div>
+
+<script>
+const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            sec.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
