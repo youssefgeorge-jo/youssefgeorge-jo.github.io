@@ -11,18 +11,18 @@
 <style>
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f3f4f6;
+    background: #f1f5f9;
     margin: 0;
 }
 
 /* CONTAINER */
 .container {
-    max-width: 1000px;
-    margin: 50px auto;
+    max-width: 1050px;
+    margin: 60px auto;
     background: #fff;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.08);
 }
 
 /* HEADER */
@@ -31,17 +31,17 @@ body {
     align-items: center;
     gap: 40px;
     border-bottom: 1px solid #eee;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
 }
 
-/* 🟦 صورة مربعة */
+/* 💎 صورة احترافية */
 .header img {
-    width: 170px;
-    height: 170px;
-    border-radius: 12px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    border: 3px solid #2563eb;
-    box-shadow: 0 15px 40px rgba(37,99,235,0.2);
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border: 3px solid #fff;
     transition: 0.3s;
 }
 
@@ -52,14 +52,14 @@ body {
 /* INFO */
 .info h1 {
     margin: 0;
-    font-size: 36px;
+    font-size: 38px;
     letter-spacing: 1px;
 }
 
 .info p {
-    color: #6b7280;
+    color: #64748b;
     margin: 8px 0 15px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 /* ICONS */
@@ -79,7 +79,7 @@ body {
 .btn {
     display: inline-block;
     margin-top: 15px;
-    padding: 10px 20px;
+    padding: 10px 22px;
     background: #2563eb;
     color: white;
     border-radius: 25px;
@@ -93,9 +93,9 @@ body {
 
 /* SECTIONS */
 .section {
-    margin-top: 40px;
+    margin-top: 45px;
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(25px);
     transition: 0.6s;
 }
 
@@ -106,15 +106,22 @@ body {
 
 .section h2 {
     color: #2563eb;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
 /* CARD */
 .card {
-    background: #f9fafb;
+    background: #f8fafc;
     padding: 20px;
     border-radius: 12px;
-    margin-top: 15px;
     transition: 0.3s;
 }
 
@@ -150,8 +157,8 @@ li {
 /* FOOTER */
 .footer {
     text-align: center;
-    margin-top: 40px;
-    color: #9ca3af;
+    margin-top: 50px;
+    color: #94a3b8;
 }
 </style>
 </head>
@@ -161,15 +168,7 @@ li {
 <div class="container">
 
 <div class="header">
-    <!-- 👇 حط صورتك هنا -->
-    <img src="profile.jpg" style="
-width:180px;
-height:180px;
-object-fit:cover;
-border-radius:14px;
-box-shadow:0 20px 60px rgba(37,99,235,0.3);
-border:3px solid #2563eb;
-">
+    <img src="profile.jpg">
 
     <div class="info">
         <h1>Youssef George</h1>
@@ -182,7 +181,6 @@ border:3px solid #2563eb;
             <a href="https://github.com/youssefgeorge-jo"><i class="fab fa-github"></i></a>
         </div>
 
-        <!-- زر تحميل -->
         <a class="btn" href="#">Download CV</a>
     </div>
 </div>
@@ -190,9 +188,9 @@ border:3px solid #2563eb;
 <div class="section">
 <h2>Professional Summary</h2>
 <p>
-Highly motivated IT Support Specialist with strong expertise in troubleshooting, system maintenance, and network fundamentals. 
-Proven ability to resolve technical issues efficiently while maintaining excellent customer satisfaction. 
-Passionate about continuous learning and adapting to new technologies in dynamic environments.
+Results-driven IT Support Specialist with strong experience in troubleshooting hardware, software, and networking issues. 
+Skilled in system installation, maintenance, and delivering efficient technical solutions in fast-paced environments. 
+Committed to providing high-quality service, improving system performance, and ensuring customer satisfaction.
 </p>
 </div>
 
@@ -201,36 +199,63 @@ Passionate about continuous learning and adapting to new technologies in dynamic
 <div class="skills">
 <span>IT Help Desk</span>
 <span>Technical Support</span>
+<span>Hardware Troubleshooting</span>
+<span>Software Installation</span>
 <span>Networking</span>
-<span>Hardware</span>
-<span>Software</span>
-<span>Python</span>
-<span>Problem Solving</span>
+<span>CCNA Fundamentals</span>
+<span>Operating Systems</span>
+<span>Python Basics</span>
 <span>Customer Support</span>
+<span>Problem Solving</span>
 </div>
 </div>
 
 <div class="section">
-<h2>Experience</h2>
+<h2>Professional Experience</h2>
 
 <div class="card">
-<h3>IT Support Specialist</h3>
+<h3>IT Support Specialist & Business Owner</h3>
 <p><strong>2023 – Present</strong></p>
 <ul>
-<li>Troubleshooting hardware and software issues.</li>
-<li>Installing and configuring systems.</li>
-<li>Providing technical support.</li>
-<li>Ensuring customer satisfaction.</li>
+<li>Diagnosed and resolved complex hardware and software issues.</li>
+<li>Installed, configured, and maintained systems and applications.</li>
+<li>Provided remote and on-site technical support.</li>
+<li>Improved customer satisfaction through fast and effective solutions.</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Leadership & Quality Team Member</h3>
+<p><strong>2023 – Present</strong></p>
+<ul>
+<li>Led initiatives to improve communication and workflow.</li>
+<li>Organized activities and contributed to team development.</li>
 </ul>
 </div>
 
 </div>
 
-<div class="section">
+<div class="section grid">
+
+<div>
 <h2>Education</h2>
 <div class="card">
 Bachelor’s Degree — Expected 2026
 </div>
+</div>
+
+<div>
+<h2>Certifications</h2>
+<div class="card">
+<ul>
+<li>Introduction to Cybersecurity</li>
+<li>IT Help Desk Training</li>
+<li>Computer Hardware & Software</li>
+<li>CCNA 200-301</li>
+</ul>
+</div>
+</div>
+
 </div>
 
 <div class="footer">
