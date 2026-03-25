@@ -6,19 +6,20 @@
 <title>Youssef George | IT Support</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body {
     font-family: 'Poppins', sans-serif;
     background: #f3f4f6;
     margin: 0;
-    color: #1f2933;
 }
 
+/* CONTAINER */
 .container {
     max-width: 1000px;
     margin: 50px auto;
-    background: #ffffff;
+    background: #fff;
     padding: 50px;
     border-radius: 20px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.08);
@@ -39,7 +40,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #2563eb;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .info h1 {
@@ -49,31 +50,38 @@ body {
 
 .info p {
     color: #6b7280;
-    margin: 5px 0;
+    margin: 5px 0 10px;
 }
 
+/* ICONS */
 .contact a {
-    text-decoration: none;
-    color: #2563eb;
+    font-size: 20px;
     margin-right: 15px;
-    font-size: 14px;
+    color: #2563eb;
+    transition: 0.3s;
 }
 
-/* SECTION */
+.contact a:hover {
+    color: #1e40af;
+    transform: scale(1.2);
+}
+
+/* SECTIONS */
 .section {
     margin-top: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .section h2 {
-    margin-bottom: 15px;
     color: #2563eb;
-}
-
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    margin-bottom: 15px;
 }
 
 /* CARD */
@@ -81,6 +89,7 @@ body {
     background: #f9fafb;
     padding: 20px;
     border-radius: 12px;
+    margin-top: 15px;
 }
 
 /* LIST */
@@ -99,7 +108,6 @@ li {
     padding: 8px 12px;
     margin: 5px;
     border-radius: 20px;
-    font-size: 13px;
 }
 
 /* FOOTER */
@@ -117,17 +125,18 @@ li {
 
 <!-- HEADER -->
 <div class="header">
-    <img src="https://drive.google.com/file/d/1k42UzIU3wOSqgmrg6vtr7LHPsXCl0m_o/view?usp=drive_link">
+    <!-- 👇 غير الصورة هنا -->
+    <img src="profile.jpg">
 
     <div class="info">
         <h1>Youssef George</h1>
         <p><strong>IT Help Desk Specialist | IT Support Technician</strong></p>
 
         <div class="contact">
-            <a href="mailto:youssefgeorgesadiek@gmail.com">Email</a>
-            <a href="https://wa.me/201222954032">WhatsApp</a>
-            <a href="https://linkedin.com/in/www.linkedin.com/in/youssef-george1">LinkedIn</a>
-            <a href="https://github.com/youssefgeorge-jo">GitHub</a>
+            <a href="mailto:youssefgeorgesadiek@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/201222954032"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://linkedin.com/in/www.linkedin.com/in/youssef-george1"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/youssefgeorge-jo"><i class="fab fa-github"></i></a>
         </div>
     </div>
 </div>
@@ -136,10 +145,9 @@ li {
 <div class="section">
 <h2>Professional Summary</h2>
 <p>
-Detail-oriented IT Support Specialist with hands-on experience in troubleshooting hardware and software issues, 
-network configuration, and system maintenance. Proven ability to diagnose technical problems quickly and provide 
-effective solutions in both remote and on-site environments. Strong communication skills with a focus on customer 
-satisfaction, combined with a passion for continuous learning and adapting to new technologies.
+Dedicated IT Support Specialist with hands-on experience in diagnosing and resolving technical issues across hardware, software, and network environments. 
+Skilled in system installation, troubleshooting, and delivering high-quality support both remotely and on-site. 
+Strong communicator with a focus on user satisfaction, efficiency, and continuous improvement.
 </p>
 </div>
 
@@ -154,80 +162,57 @@ satisfaction, combined with a passion for continuous learning and adapting to ne
 <span>Networking Fundamentals</span>
 <span>CCNA Basics</span>
 <span>Operating Systems</span>
-<span>Python (Basic)</span>
+<span>Python Basics</span>
 <span>Customer Support</span>
 <span>Problem Solving</span>
-<span>Communication</span>
 </div>
 </div>
 
 <!-- EXPERIENCE -->
 <div class="section">
-<h2>Professional Experience</h2>
+<h2>Experience</h2>
 
 <div class="card">
 <h3>IT Support Specialist & Business Owner</h3>
 <p><strong>2023 – Present</strong></p>
 <ul>
-<li>Provided technical support for hardware, software, and networking issues.</li>
+<li>Diagnosed and resolved hardware and software issues efficiently.</li>
 <li>Installed and configured operating systems and applications.</li>
-<li>Delivered remote and on-site troubleshooting solutions.</li>
-<li>Maintained high customer satisfaction through fast response times.</li>
-<li>Managed multiple client requests efficiently.</li>
+<li>Provided remote and on-site technical support.</li>
+<li>Maintained high customer satisfaction.</li>
 </ul>
 </div>
 
 <div class="card">
-<h3>School Leadership & Quality Team Member</h3>
+<h3>Leadership & Quality Team Member</h3>
 <p><strong>2023 – Present</strong></p>
 <ul>
-<li>Organized school activities and student events.</li>
-<li>Improved communication between students and administration.</li>
-<li>Demonstrated leadership and teamwork skills.</li>
+<li>Organized events and improved communication.</li>
+<li>Demonstrated leadership and teamwork.</li>
 </ul>
 </div>
 
 </div>
 
 <!-- EDUCATION -->
-<div class="section grid">
-
-<div>
+<div class="section">
 <h2>Education</h2>
 <div class="card">
-<p><strong>Bachelor’s Degree</strong></p>
-<p>Expected Graduation: 2026</p>
+Bachelor’s Degree — Expected 2026
 </div>
 </div>
 
-<div>
+<!-- CERTIFICATIONS -->
+<div class="section">
 <h2>Certifications</h2>
 <div class="card">
 <ul>
 <li>Introduction to Cybersecurity</li>
 <li>IT Help Desk Training</li>
-<li>Computer Hardware & Software Basics</li>
+<li>Computer Hardware & Software</li>
 <li>CCNA 200-301</li>
 </ul>
 </div>
-</div>
-
-</div>
-
-<!-- PROJECTS -->
-<div class="section">
-<h2>Projects</h2>
-
-<div class="card">
-<p><strong>Computer Maintenance Service</strong></p>
-<p>Provided repair, troubleshooting, and system optimization services for clients.</p>
-</div>
-
-<div class="card">
-<p><strong>Networking Practice Lab</strong></p>
-<p>Configured routers, switches, and simulated real-world networking scenarios.</p>
-</div>
-
 </div>
 
 <div class="footer">
@@ -235,6 +220,19 @@ satisfaction, combined with a passion for continuous learning and adapting to ne
 </div>
 
 </div>
+
+<script>
+const sections = document.querySelectorAll('.section');
+
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            sec.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
