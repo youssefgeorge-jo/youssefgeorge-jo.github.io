@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Youssef George | IT Support</title>
+<title>Youssef George</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -11,271 +11,179 @@
 <style>
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f1f5f9;
     margin: 0;
+    background: #f9fafb;
 }
 
-/* CONTAINER */
-.container {
-    max-width: 1050px;
-    margin: 60px auto;
-    background: #fff;
-    padding: 50px;
-    border-radius: 20px;
-    box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 60px;
 }
 
-/* HEADER */
-.header {
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.navbar a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #111;
+}
+
+/* HERO */
+.hero {
     display: flex;
     align-items: center;
-    gap: 40px;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 35px;
+    justify-content: space-between;
+    padding: 60px;
 }
 
-/* 💎 صورة احترافية */
-.header img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-    border: 3px solid #fff;
-    transition: 0.3s;
-}
-
-.header img:hover {
-    transform: scale(1.05);
-}
-
-/* INFO */
-.info h1 {
+.hero-text h1 {
+    font-size: 55px;
     margin: 0;
-    font-size: 38px;
-    letter-spacing: 1px;
 }
 
-.info p {
-    color: #64748b;
-    margin: 8px 0 15px;
-    font-size: 16px;
+.hero-text span {
+    font-weight: 600;
 }
 
-/* ICONS */
-.contact a {
-    font-size: 20px;
+.hero-text p {
+    margin-top: 20px;
+    color: #6b7280;
+    max-width: 500px;
+}
+
+.social {
+    margin-top: 25px;
+}
+
+.social a {
     margin-right: 15px;
+    font-size: 20px;
+    color: #9ca3af;
+}
+
+.social a:hover {
     color: #2563eb;
-    transition: 0.3s;
 }
 
-.contact a:hover {
-    color: #1e40af;
-    transform: scale(1.2);
+.hero img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
 
-/* BUTTON */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 22px;
-    background: #2563eb;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #1e40af;
-}
-
-/* SECTIONS */
+/* SECTION */
 .section {
-    margin-top: 45px;
-    opacity: 0;
-    transform: translateY(25px);
-    transition: 0.6s;
-}
-
-.section.show {
-    opacity: 1;
-    transform: translateY(0);
+    padding: 60px;
 }
 
 .section h2 {
-    color: #2563eb;
     margin-bottom: 20px;
-    font-size: 22px;
 }
 
-/* GRID */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-}
-
-/* CARD */
+/* CARDS */
 .card {
-    background: #f8fafc;
+    background: white;
     padding: 20px;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-/* LIST */
-ul {
-    padding-left: 20px;
-}
-
-li {
-    margin-bottom: 8px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 /* SKILLS */
 .skills span {
-    display: inline-block;
     background: #e0e7ff;
-    padding: 10px 14px;
-    margin: 6px;
-    border-radius: 25px;
-    font-size: 13px;
-    transition: 0.3s;
-}
-
-.skills span:hover {
-    background: #2563eb;
-    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    margin: 5px;
+    display: inline-block;
 }
 
 /* FOOTER */
 .footer {
     text-align: center;
-    margin-top: 50px;
-    color: #94a3b8;
+    padding: 30px;
+    color: #999;
 }
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">Youssef</div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
 
-<div class="header">
-    <img src="profile.jpg">
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <br><span>Youssef George</span></h1>
+        <p>
+            IT Support Specialist with strong experience in troubleshooting, networking, and system maintenance.
+            Passionate about solving technical problems and delivering high-quality solutions.
+        </p>
 
-    <div class="info">
-        <h1>Youssef George</h1>
-        <p><strong>IT Help Desk Specialist | IT Support Technician</strong></p>
-
-        <div class="contact">
+        <div class="social">
             <a href="mailto:youssefgeorgesadiek@gmail.com"><i class="fas fa-envelope"></i></a>
             <a href="https://wa.me/201222954032"><i class="fab fa-whatsapp"></i></a>
             <a href="https://linkedin.com/in/youssef-george1"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/youssefgeorge-jo"><i class="fab fa-github"></i></a>
         </div>
+    </div>
 
-        <a class="btn" href="#">Download CV</a>
+    <img src="profile.jpg">
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        I am a dedicated IT Support Specialist with hands-on experience in solving technical issues,
+        managing systems, and supporting users effectively. I enjoy learning new technologies and
+        continuously improving my technical and communication skills.
     </div>
 </div>
 
+<!-- SKILLS -->
 <div class="section">
-<h2>Professional Summary</h2>
-<p>
-Results-driven IT Support Specialist with strong experience in troubleshooting hardware, software, and networking issues. 
-Skilled in system installation, maintenance, and delivering efficient technical solutions in fast-paced environments. 
-Committed to providing high-quality service, improving system performance, and ensuring customer satisfaction.
-</p>
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>IT Support</span>
+        <span>Networking</span>
+        <span>Hardware</span>
+        <span>Software</span>
+        <span>Python</span>
+        <span>Problem Solving</span>
+    </div>
 </div>
 
+<!-- EXPERIENCE -->
 <div class="section">
-<h2>Core Skills</h2>
-<div class="skills">
-<span>IT Help Desk</span>
-<span>Technical Support</span>
-<span>Hardware Troubleshooting</span>
-<span>Software Installation</span>
-<span>Networking</span>
-<span>CCNA Fundamentals</span>
-<span>Operating Systems</span>
-<span>Python Basics</span>
-<span>Customer Support</span>
-<span>Problem Solving</span>
-</div>
-</div>
+    <h2>Experience</h2>
 
-<div class="section">
-<h2>Professional Experience</h2>
-
-<div class="card">
-<h3>IT Support Specialist & Business Owner</h3>
-<p><strong>2023 – Present</strong></p>
-<ul>
-<li>Diagnosed and resolved complex hardware and software issues.</li>
-<li>Installed, configured, and maintained systems and applications.</li>
-<li>Provided remote and on-site technical support.</li>
-<li>Improved customer satisfaction through fast and effective solutions.</li>
-</ul>
-</div>
-
-<div class="card">
-<h3>Leadership & Quality Team Member</h3>
-<p><strong>2023 – Present</strong></p>
-<ul>
-<li>Led initiatives to improve communication and workflow.</li>
-<li>Organized activities and contributed to team development.</li>
-</ul>
-</div>
+    <div class="card">
+        <strong>IT Support Specialist (2023 – Present)</strong>
+        <p>Provided troubleshooting, installation, and technical support services.</p>
+    </div>
 
 </div>
 
-<div class="section grid">
-
-<div>
-<h2>Education</h2>
-<div class="card">
-Bachelor’s Degree — Expected 2026
-</div>
-</div>
-
-<div>
-<h2>Certifications</h2>
-<div class="card">
-<ul>
-<li>Introduction to Cybersecurity</li>
-<li>IT Help Desk Training</li>
-<li>Computer Hardware & Software</li>
-<li>CCNA 200-301</li>
-</ul>
-</div>
-</div>
-
-</div>
-
+<!-- FOOTER -->
 <div class="footer">
 © 2026 Youssef George
 </div>
-
-</div>
-
-<script>
-const sections = document.querySelectorAll('.section');
-
-window.addEventListener('scroll', () => {
-    sections.forEach(sec => {
-        const top = sec.getBoundingClientRect().top;
-        if (top < window.innerHeight - 100) {
-            sec.classList.add('show');
-        }
-    });
-});
-</script>
 
 </body>
 </html>
