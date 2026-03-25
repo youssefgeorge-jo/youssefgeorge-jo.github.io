@@ -3,98 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Youssef George</title>
+<title>Youssef George | IT Support</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f5f7fa;
+    background: #f3f4f6;
     margin: 0;
-    color: #1e293b;
+    color: #1f2933;
 }
 
 .container {
-    max-width: 950px;
+    max-width: 1000px;
     margin: 50px auto;
-    background: white;
+    background: #ffffff;
     padding: 50px;
     border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
 }
 
+/* HEADER */
 .header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 30px;
 }
 
 .header img {
-    width: 120px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    margin-bottom: 15px;
+    object-fit: cover;
+    border: 4px solid #2563eb;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.header h1 {
-    font-size: 36px;
+.info h1 {
+    margin: 0;
+    font-size: 34px;
 }
 
-.line {
-    width: 70px;
-    height: 3px;
-    background: #2563eb;
-    margin: 15px auto;
-}
-
-.title {
-    color: #475569;
-    font-size: 18px;
+.info p {
+    color: #6b7280;
+    margin: 5px 0;
 }
 
 .contact a {
     text-decoration: none;
     color: #2563eb;
-    margin: 0 10px;
+    margin-right: 15px;
+    font-size: 14px;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #2563eb;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-}
-
+/* SECTION */
 .section {
     margin-top: 40px;
 }
 
 .section h2 {
-    border-bottom: 2px solid #eee;
-    padding-bottom: 5px;
     margin-bottom: 15px;
+    color: #2563eb;
 }
 
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* CARD */
 .card {
-    background: #f8fafc;
+    background: #f9fafb;
     padding: 20px;
-    border-radius: 10px;
-    margin-top: 10px;
+    border-radius: 12px;
 }
 
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* SKILLS */
 .skills span {
     display: inline-block;
-    background: #eef2ff;
+    background: #e0e7ff;
     padding: 8px 12px;
     margin: 5px;
     border-radius: 20px;
+    font-size: 13px;
 }
 
+/* FOOTER */
 .footer {
     text-align: center;
     margin-top: 40px;
-    color: #94a3b8;
+    color: #9ca3af;
 }
 </style>
 </head>
@@ -103,116 +115,119 @@ body {
 
 <div class="container">
 
+<!-- HEADER -->
 <div class="header">
-    <img src="https://drive.google.com/file/d/1k42UzIU3wOSqgmrg6vtr7LHPsXCl0m_o/view?usp=drive_link" style="
-width:140px;
-height:140px;
-border-radius:50%;
-object-fit:cover;
-border:3px solid #2563eb;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-"> 
-    <h1>Youssef George</h1>
-    <div class="line"></div>
-    <p class="title">IT Help Desk Specialist | IT Support Technician</p>
+    <img src="https://drive.google.com/file/d/1k42UzIU3wOSqgmrg6vtr7LHPsXCl0m_o/view?usp=drive_link">
 
-    <div class="contact">
-        <a href="mailto:youssefgeorgesadiek@gmail.com">Email</a>
-        <a href="https://wa.me/201222954032">WhatsApp</a>
-        <a href="https://linkedin.com/in/youssef-george1">LinkedIn</a>
-        <a href="https://github.com/youssefgeorge-jo">GitHub</a>
+    <div class="info">
+        <h1>Youssef George</h1>
+        <p><strong>IT Help Desk Specialist | IT Support Technician</strong></p>
+
+        <div class="contact">
+            <a href="mailto:youssefgeorgesadiek@gmail.com">Email</a>
+            <a href="https://wa.me/201222954032">WhatsApp</a>
+            <a href="https://linkedin.com/in/www.linkedin.com/in/youssef-george1">LinkedIn</a>
+            <a href="https://github.com/youssefgeorge-jo">GitHub</a>
+        </div>
     </div>
-
-    <a class="btn" href="#">cv.pdf</a>
 </div>
 
+<!-- SUMMARY -->
 <div class="section">
 <h2>Professional Summary</h2>
 <p>
-Highly motivated IT Support Specialist with a strong foundation in troubleshooting, system maintenance, and customer service. 
-Experienced in diagnosing hardware and software issues, configuring systems, and providing efficient technical solutions. 
-Passionate about technology, continuous learning, and delivering high-quality support in fast-paced environments.
+Detail-oriented IT Support Specialist with hands-on experience in troubleshooting hardware and software issues, 
+network configuration, and system maintenance. Proven ability to diagnose technical problems quickly and provide 
+effective solutions in both remote and on-site environments. Strong communication skills with a focus on customer 
+satisfaction, combined with a passion for continuous learning and adapting to new technologies.
 </p>
 </div>
 
+<!-- SKILLS -->
 <div class="section">
-<h2>Technical Skills</h2>
+<h2>Core Skills</h2>
 <div class="skills">
 <span>IT Help Desk</span>
 <span>Technical Support</span>
-<span>Networking Fundamentals</span>
 <span>Hardware Troubleshooting</span>
 <span>Software Installation</span>
-<span>Python Basics</span>
-<span>Microsoft Office</span>
+<span>Networking Fundamentals</span>
+<span>CCNA Basics</span>
 <span>Operating Systems</span>
+<span>Python (Basic)</span>
+<span>Customer Support</span>
+<span>Problem Solving</span>
+<span>Communication</span>
 </div>
 </div>
 
+<!-- EXPERIENCE -->
 <div class="section">
 <h2>Professional Experience</h2>
 
 <div class="card">
 <h3>IT Support Specialist & Business Owner</h3>
 <p><strong>2023 – Present</strong></p>
-<p>
-Delivered comprehensive technical support services including hardware diagnostics, software troubleshooting, and system installations. 
-Managed client relationships, ensured customer satisfaction, and provided reliable IT solutions tailored to client needs.
-</p>
 <ul>
-<li>Diagnosed and resolved hardware and software issues efficiently</li>
-<li>Installed and configured operating systems and applications</li>
-<li>Provided remote and on-site support</li>
-<li>Maintained high customer satisfaction levels</li>
+<li>Provided technical support for hardware, software, and networking issues.</li>
+<li>Installed and configured operating systems and applications.</li>
+<li>Delivered remote and on-site troubleshooting solutions.</li>
+<li>Maintained high customer satisfaction through fast response times.</li>
+<li>Managed multiple client requests efficiently.</li>
 </ul>
 </div>
 
 <div class="card">
 <h3>School Leadership & Quality Team Member</h3>
 <p><strong>2023 – Present</strong></p>
-<p>
-Actively participated in school leadership initiatives and quality improvement programs, demonstrating strong teamwork and communication skills.
-</p>
 <ul>
-<li>Organized student activities and events</li>
-<li>Facilitated communication between students and administration</li>
-<li>Developed leadership and problem-solving skills</li>
+<li>Organized school activities and student events.</li>
+<li>Improved communication between students and administration.</li>
+<li>Demonstrated leadership and teamwork skills.</li>
 </ul>
 </div>
 
 </div>
 
-<div class="section">
+<!-- EDUCATION -->
+<div class="section grid">
+
+<div>
 <h2>Education</h2>
 <div class="card">
-<p><strong>Bachelor’s Degree in Higher Education</strong></p>
+<p><strong>Bachelor’s Degree</strong></p>
 <p>Expected Graduation: 2026</p>
 </div>
 </div>
 
-<div class="section">
-<h2>Certifications & Courses</h2>
+<div>
+<h2>Certifications</h2>
 <div class="card">
 <ul>
 <li>Introduction to Cybersecurity</li>
 <li>IT Help Desk Training</li>
 <li>Computer Hardware & Software Basics</li>
-<li>CCNA 200-301 (Networking Fundamentals)</li>
+<li>CCNA 200-301</li>
 </ul>
 </div>
 </div>
 
+</div>
+
+<!-- PROJECTS -->
 <div class="section">
 <h2>Projects</h2>
+
 <div class="card">
-<p><strong>IT Maintenance Service</strong></p>
-<p>Provided troubleshooting, repair, and system setup services for multiple clients.</p>
+<p><strong>Computer Maintenance Service</strong></p>
+<p>Provided repair, troubleshooting, and system optimization services for clients.</p>
 </div>
 
 <div class="card">
 <p><strong>Networking Practice Lab</strong></p>
-<p>Configured routers and switches and practiced network troubleshooting scenarios.</p>
+<p>Configured routers, switches, and simulated real-world networking scenarios.</p>
 </div>
+
 </div>
 
 <div class="footer">
